@@ -1,0 +1,4 @@
+ - Initialize Angular Project
+ - Install Bootstrap 5
+ - Install sweetalert 2
+ - replce files in src folder

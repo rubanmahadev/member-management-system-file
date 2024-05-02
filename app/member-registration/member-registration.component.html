@@ -1,0 +1,127 @@
+<form [formGroup]="registrationform" class="container" style="color: white;  ">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+        <div class="col" style="margin-top: 20px;">
+            <div class="form-outline">
+                <label class="form-label" for="form6Example1">First Name</label>
+                <input type="text" formControlName="firstname" style="background: none; color: white;"
+                    id="form6Example1" class="form-control" placeholder="Member ID" />
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline" style="margin-top: 20px;">
+                <label class="form-label" for="form6Example2">Last Name</label>
+                <input type="text" formControlName="lastname" style="background: none; color: white;" id="form6Example2"
+                    class="form-control" />
+
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col" style="margin-top: 20px;">
+            <div class="form-outline">
+                <label class="form-label" for="form6Example1">Aadhar No</label>
+                <input type="text" formControlName="aadharid" style="background: none; color: white;" id="form6Example1"
+                    class="form-control" />
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline" style="margin-top: 20px;">
+                <label class="form-label" for="form6Example2">Address</label>
+                <input type="text" formControlName="address" style="background: none; color: white;" id="form6Example2"
+                    class="form-control" />
+
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col" style="margin-top: 20px;">
+            <div class="form-outline">
+                <label class="form-label" for="form6Example1">Mobile No</label>
+                <input type="text " formControlName="contact" style="background: none; color: white;" id="form6Example1"
+                    class="form-control" />
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline" style="margin-top: 20px;">
+                <label class="form-label" for="form6Example2">Email</label>
+                <input type="text" formControlName="email" style="background: none; color: white;" id="form6Example2"
+                    class="form-control" />
+
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col" style="margin-top: 20px;">
+            <div class="form-outline">
+                <label class="form-label" for="form6Example1"> Date Of Birth</label>
+                <input type="date" formControlName="dob" (change)="agecalc($event)"
+                    style="background: none; color: white;" id="form6Example1" class="form-control" />
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline" style="margin-top: 20px;">
+                <label class="form-label" for="form6Example2">Gender</label>
+                <select formControlName="gender" id="form6Example2" style="background: none; color: black;"
+                    class="form-control">
+                    <option>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col" style="margin-top: 20px;">
+            <div class="form-outline">
+                <!-- <label class="form-label" for="form6Example1">Category</label>
+                <select (change)="amount($event)" formControlName="category" id="form6Example1"
+                    style="background: none; color: white;" class="form-control">
+                    <option>Select</option>
+                    <option *ngFor="let data of category">{{data.Category}}</option>
+                    
+
+                </select> -->
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline" style="margin-top: 20px;">
+                <label class="form-label" for="form6Example2">Plan</label>
+                <select (change)="enddate($event)" formControlName="plan" id="form6Example2"
+                    style="background: none; color: white;" class="form-control">
+                    <option>Select</option>
+                    <option *ngFor="let data of plan" value={{data.Duration}}&&{{data.Amount}}>{{data.Plan}}</option>
+                    <!-- <option value="1">One Month</option>
+                    <option value="3">Three Month</option>
+                    <option value="6">Six Month</option>
+                    <option value="12">One year</option> -->
+
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-outline">
+            <label class="form-label" for="form6Example1">Amount</label>
+            <input type="text" formControlName="amount" style="background: none; color: white;" id="form6Example1"
+                class="form-control" />
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: center;"> <button (click)="register()" class="regbtn">Register</button>
+        </div>
+
+    </div>
+
+
+</form>

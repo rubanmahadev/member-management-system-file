@@ -1,0 +1,22 @@
+<body>
+    <div class="container">
+        <form [formGroup]="cred" class="loginpanel">
+            <div class="textbox input">
+                <!-- <label>User Name</label> -->
+                <input type="text" formControlName="username" placeholder="Username">
+            </div>
+            <div class="textbox input">
+                <!-- <label>Password</label> -->
+                <input type="text" formControlName="password" placeholder="Password">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="logbtn" type="submit" (click)="login()">Login</p>
+                </div>
+                <div class="col">
+                    <p class="logbtn" (click)="forgotpass()">Forgot&nbsp;Password</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

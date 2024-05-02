@@ -1,0 +1,62 @@
+.heading{
+    font-weight: 800;
+    font-size: xx-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+.regform{
+    text-align: center;
+    margin-top: 150px;
+}
+.trans {
+  color: white;
+  font-weight: bold;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        // outline: 2px solid whitesmoke ;
+        
+        
+        
+}
+.textbox input{
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    font-size: 18px;
+    margin: 12px 0;
+
+}
+.logbtn {
+    width: 100%;
+    background: none;
+    border: 2px solid whitesmoke;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.logbtn:hover{
+//    background-color: white;
+//    border: none;
+box-shadow: 0 0 10px white,     
+}
+input[type="text"]:hover{
+    box-shadow: 0 0 10px white,
+}
+
+
+
+
+
+

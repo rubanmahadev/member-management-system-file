@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body{
+    background-image: url(../src/assets/bg.jpg); ///gym/src/assets/wallpaperflare.com_wallpaper.jpg
+    background-size : cover;
+    
+        /* Optional: Adjust the size of the background image */
+        background-repeat: no-repeat;
+        /* Optional: Prevent image from repeating */
+        
+}
+.reg {
+    text-align: end;
+    margin-right: 20px;
+    color: azure;
+    cursor: pointer;
+    // margin-top: px;
+    // opacity: 0.2;
+}

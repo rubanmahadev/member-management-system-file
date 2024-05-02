@@ -1,0 +1,222 @@
+{
+  "admincred": [
+    {
+      "id": 1000,
+      "username": "111",
+      "password": "111"
+    }
+  ],
+  "data": [
+    {
+      "firstname": "Monish",
+      "lastname": "S",
+      "aadharid": "1234567890",
+      "gender": "male",
+      "address": "Loco",
+      "contact": "0987654321",
+      "email": "monish@gmail.com",
+      "dob": "2002-03-16",
+      "age": 21,
+      "category": "Weight Lifting + Cardio",
+      "plan": "6",
+      "amount": 5000,
+      "payconfirmation": null,
+      "joindate": "05-10-2023",
+      "expirydate": "05-04-2024",
+      "freeze": false,
+      "id": 300
+    },
+    {
+      "id": 302,
+      "firstname": "Shyam",
+      "lastname": "Ganesh",
+      "aadharid": "1234567890",
+      "gender": "male",
+      "address": "Loco",
+      "contact": "1234567890",
+      "email": "jam@gmail.com",
+      "dob": "2001-11-25",
+      "age": 21,
+      "category": "Weight Lifting",
+      "plan": "3",
+      "amount": 2500,
+      "payconfirmation": null,
+      "joindate": "05-10-2023",
+      "expirydate": "05-01-2024",
+      "freeze": false
+    },
+    {
+      "firstname": "Girish",
+      "lastname": "Sai Ram",
+      "aadharid": "1234567890",
+      "gender": "male",
+      "address": "Carriage Perambur",
+      "contact": "987654321",
+      "email": "Girishsairam@gmail.com",
+      "dob": "2001-11-25",
+      "age": 21,
+      "category": "Weight Lifting",
+      "plan": "3",
+      "amount": 2500,
+      "payconfirmation": null,
+      "joindate": "07-10-2023",
+      "expirydate": "07-01-2024",
+      "freezestartdate": "30-04-2024",
+      "freeze": true,
+      "id": 303
+    },
+    {
+      "id": 304,
+      "firstname": "Guhan",
+      "lastname": "Raj",
+      "aadharid": "000000000000",
+      "gender": "male",
+      "address": "Villivakkam",
+      "contact": "9003686205",
+      "email": "guhanraj@gmail.com",
+      "dob": "2002-07-25",
+      "age": 21,
+      "category": "Weight Lifting",
+      "plan": "1",
+      "amount": 1000,
+      "payconfirmation": null,
+      "joindate": "07-10-2023",
+      "expirydate": "07-11-2023",
+      "freeze": false
+    },
+    {
+      "firstname": "Harish",
+      "lastname": "U",
+      "aadharid": "000000000000",
+      "gender": "male",
+      "address": "Loco",
+      "contact": "9876543221",
+      "email": "harish@gmail.com",
+      "dob": "2023-08-17",
+      "age": 0,
+      "category": "Weight Lifting",
+      "plan": "1",
+      "amount": 1000,
+      "payconfirmation": null,
+      "joindate": "07-10-2023",
+      "expirydate": "07-11-2023",
+      "freeze": false,
+      "id": 305
+    },
+    {
+      "id": 307,
+      "firstname": "Vijay",
+      "lastname": "M",
+      "aadharid": "000000000000",
+      "gender": "male",
+      "address": "ayanavaram",
+      "contact": "9876543210",
+      "email": "vijay@gmail.com",
+      "dob": "2001-11-11",
+      "age": 21,
+      "category": "Weight Lifting + Cardio",
+      "plan": "6",
+      "amount": 5000,
+      "payconfirmation": null,
+      "joindate": "18-10-2023",
+      "expirydate": "18-04-2023",
+      "freeze": false
+    },
+    {
+      "id": 308,
+      "firstname": "Raja",
+      "lastname": "M",
+      "aadharid": "0000 0000 0000",
+      "gender": "male",
+      "address": "chennai",
+      "contact": "9176545454",
+      "email": "raja@gmail.com",
+      "dob": "2000-11-11",
+      "age": 23,
+      "category": null,
+      "plan": "12&&7800",
+      "amount": "7800",
+      "payconfirmation": null,
+      "joindate": "30-04-2024",
+      "expirydate": "30-04-2025",
+      "freeze": false
+    }
+  ],
+  "checkin": [
+    {
+      "count": 1,
+      "date": "30-04-2024",
+      "id": 100
+    }
+  ],
+  "idrepeat": [
+    {
+      "id": 101,
+      "sid": 1
+    },
+    {
+      "sid": 308,
+      "id": 102
+    }
+  ],
+  "cmscategory": [
+    {
+      "id": 150,
+      "Category": "Weight Lifting"
+    },
+    {
+      "id": 151,
+      "Category": "Weight Lifting + Cardio"
+    }
+  ],
+  "cmsplan": [
+    {
+      "Plan": "Weight Lifting 1 Month",
+      "Duration": 1,
+      "Amount": 1000,
+      "id": 200
+    },
+    {
+      "id": 201,
+      "Plan": "Weight Lifting 3 Month",
+      "Duration": 3,
+      "Amount": 2550
+    },
+    {
+      "id": 202,
+      "Plan": "Weight Lifting 6 Month",
+      "Duration": 6,
+      "Amount": 4500
+    },
+    {
+      "Plan": "Weight Lifting 12 Month ",
+      "Duration": 12,
+      "Amount": 7800,
+      "id": 203
+    },
+    {
+      "Plan": "Weight Lifting + cardio 1 Month",
+      "Duration": "1",
+      "Amount": "1200",
+      "id": 204
+    },
+    {
+      "Plan": "Weight Lifting + cardio 3 Month",
+      "Duration": "3",
+      "Amount": "3000",
+      "id": 205
+    },
+    {
+      "Plan": "Weight Lifting + cardio 6 Month",
+      "Duration": "6",
+      "Amount": "5400",
+      "id": 206
+    },
+    {
+      "Plan": "Weight Lifting + cardio 12 Month",
+      "Duration": "12",
+      "Amount": "9000",
+      "id": 207
+    }
+  ]
+}

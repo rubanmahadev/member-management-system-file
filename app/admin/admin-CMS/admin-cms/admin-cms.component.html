@@ -1,0 +1,73 @@
+<body>
+    <div class="container">
+        <div>
+            <form [formGroup]="form">
+                <div class="row">
+                    <div class="col">
+                        <label>Plan</label>
+                        <input type="text" formControlName="plan" />
+                    </div>
+                    <div class="col">
+                        <label>Duration in Month</label>
+                        <select formControlName="duration">
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Amount</label>
+                        <input type="text" formControlName="amount" />
+                    </div>
+                    <div>
+                        <!-- <button (click)="addplan()">Add</button> -->
+                        <button (click)="addplan()">{{ button }}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                                S.No
+                            </th>
+                            <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                                Plan
+                            </th>
+                            <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                                Duration
+                            </th>
+                            <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                                Price
+                            </th>
+                            <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                            </th>
+                            <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of data2; index as i">
+                            <th class="tab" scope="row">{{ i + 1 }}</th>
+                            <td class="tab">{{ data.Plan }}</td>
+                            <td class="tab">{{ data.Duration }}&nbsp;Month</td>
+                            <td class="tab">₹ {{ data.Amount }}.00</td>
+                            <td>
+                                <i style="color: black; cursor: pointer; font-size: 21px" class="bi bi-pen"
+                                    (click)="editplan(data.id)"></i>
+                            </td>
+                            <td>
+                                <i style="color: red; cursor: pointer; font-size: 21px" class="bi bi-trash"
+                                    (click)="deleteplan(data.id)"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

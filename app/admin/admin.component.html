@@ -1,0 +1,135 @@
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label>First Name</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Last Name</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Aadhar</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Gender</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Date of Birth</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Email</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Mobile</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Address</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Plan</label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label>Duration</label>
+                <input type="text" />
+            </div>
+            <!-- <div class="col">
+                <label></label>
+                <input type="text" />
+            </div>
+            <div class="col">
+                <label></label>
+                <input type="text" />
+            </div> -->
+        </div>
+        <h3>{{ present }}/{{ total }}</h3>
+
+        <!-- <label for="file">Present Members :</label> -->
+        <progress style="padding: 30px" id="file" value="{{ presentpercet }}" max="100">
+            32%
+        </progress>
+        <h2>{{ presentpercet }}%</h2>
+        <div>
+            <label for="search">Search</label>
+            <input type="text" />
+        </div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                        S.no
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                        Member&nbsp;ID
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                        Name
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                        Aadhar Id
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col-2" scope="col">
+                        Gender & Age
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col" scope="col">
+                        Mobile No
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col-2" scope="col">
+                        Email
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col-1" scope="col">
+                        Address
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col-2" scope="col">
+                        Plan
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col-1" scope="col">
+                        Join Date
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col-1" scope="col">
+                        Expiry
+                    </th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col"></th>
+                    <th style="background-color: rgb(46, 46, 46); color: aliceblue" class="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of datas; index as i">
+                    <th class="tab" scope="row">{{ i + 1 }}</th>
+                    <td class="tab" style="text-align: center; color: green; font-weight: 500">
+                        {{ data.id }}
+                    </td>
+                    <td class="tab">{{ data.firstname }}&nbsp;{{ data.lastname }}</td>
+                    <td class="tab">{{ data.aadharid }}</td>
+                    <td class="tab">
+                        {{ data.gender }}&nbsp;{{ data.age }}&nbsp;Years Old
+                    </td>
+                    <td class="tab">{{ data.contact }}</td>
+                    <td class="tab">{{ data.email }}</td>
+                    <td class="tab">{{ data.address }}</td>
+                    <td class="tab">
+                        {{ data.category }}&nbsp;{{ data.plan }}&nbsp;Months
+                    </td>
+                    <td class="tab">{{ data.joindate }}</td>
+                    <td class="tab">{{ data.expirydate }}</td>
+                    <td>
+                        <i (click)="freeze(data.id)" style="color: blue; cursor: pointer; font-size: 21px"
+                            class="bi bi-pen"></i>
+                    </td>
+                    <td>
+                        <i (click)="delete(data.id)" style="color: red; cursor: pointer; font-size: 21px"
+                            class="bi bi-trash"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

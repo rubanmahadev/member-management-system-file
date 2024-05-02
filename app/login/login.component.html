@@ -1,0 +1,52 @@
+<body>
+    <div class="trans">
+        <div class="heading">Welcome</div>
+        <!-- <div>Member id</div> -->
+        <form [formGroup]="form">
+            <i class="fa fa-user"></i>
+            <div class="textbox input">
+                <input type="text" formControlName="regid" placeholder="Member ID" />
+                <!-- <input type="date" formControlName="xdate" placeholder="Member ID" /> -->
+            </div>
+            <p *ngIf="
+          this.form.get('regid').hasError('required') &&
+          this.form.get('regid').touched
+        " style="color: rgb(255, 255, 255); font-weight: 500; margin-top: -10px">
+                Member ID Is Required
+            </p>
+            <div><button class="logbtn" (click)="login()">Login</button></div>
+            <!-- <div>
+                <button class="btn btn-success" style="padding: 9px 30px" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop" id="mybtn">
+                    Sign Up
+                </button>
+                <button (click)="openmodel()">test</button>
+            </div> -->
+        </form>
+    </div>
+
+
+</body>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Register</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
